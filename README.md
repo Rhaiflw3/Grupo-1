@@ -11,7 +11,6 @@ En esta actividad transformamos un modelo Entidad-Relación a un modelo físico 
 
 ### Código SQL (Implementación)
 ```sql
--- Aquí pegas el código SQL que hicimos juntos
 -- 1. Tabla Cliente
 CREATE TABLE TCliente
 (
@@ -43,7 +42,6 @@ CREATE TABLE TGrupoDisciplina
     fechaInicioG DATE,
     fechaFinG DATE,
     idD CHAR(5) NOT NULL,                 
-    -- CORRECCIÓN: Un grupo pertenece a una disciplina
     FOREIGN KEY(idD) REFERENCES TDisciplina(IdDisciplina)
 );
 
